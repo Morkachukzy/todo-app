@@ -1,0 +1,12 @@
+.home {
+  background-color: none;
+  width: 33rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 630px) {
+.home{
+  max-width: 80%;
+  margin: 1rem auto;
+}
+}

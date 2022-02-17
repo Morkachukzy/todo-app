@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Light Theme */
+  --very-light-gray: hsl(235, 19%, 35%);
+  --very-light-grayish-blue: hsl(240, 4%, 71%);
+  --light-grayish-blue: hsl(255, 0%, 97%);
+  --lighter-grayish-blue: hsl(255, 0%, 98%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+  --very-light-desaturated-blue: hsl(234, 9%, 85%);
+  --very-dark-blue: hsl(235, 11%, 37%);
+
+  --background-color: var(--light-grayish-blue);
+  --canceled-todo-font-color: var(--very-light-desaturated-blue);
+  --box-shadow: 0px 40px 60px -25px var(--very-light-desaturated-blue);
+  --default-button-font-color: var(--dark-grayish-blue);
+  --section-button-font-color: var(--dark-grayish-blue); /**/
+  --list-item-font-color: var(--very-dark-blue);
+  --border-color: var(--very-light-desaturated-blue);
+  --hover-font-color: var(--very-dark-blue);
+  --checkbox-border-color: purple;
+  --second-background-color: var(--lighter-grayish-blue);
+  --canceled-todo-font-color: var(--very-dark-desaturated-blue);
+
+  --border-radius: 4px;
+    
+
+  --background-image-desktop: url("../images/bg-desktop-light.jpg");
+  --background-image-mobile: url("../images/bg-mobile-light.jpg");
+  --background-image: var(--background-image-desktop);
+}
+
+[data-theme="Dark"] {
+  /* Dark Theme */
+  --dark-desaturated-blue: hsl(235, 23%, 22%);
+  --darkest-desaturated-blue: hsl(228, 29%, 3%);
+
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --second-very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+  --background-color: var(--very-dark-desaturated-blue);
+  --second-background-color: var(--dark-desaturated-blue);
+
+  --box-shadow: 0px 40px 60px -25px var(--darkest-desaturated-blue);
+
+  --canceled-todo-font-color: var(--dark-grayish-blue);
+  --default-font-color: var(--light-grayish-blue);
+  --list-item-font-color: var(--light-grayish-blue);
+  --hover-font-color: var(--light-grayish-blue-hover);
+  --section-button-font-color: var(--very-dark-grayish-blue); /**/
+  --todo-grid-background-color: var(--second-very-dark-grayish-blue);
+  --checkbox-border-color: lightblue;
+  --border-color: var(--very-dark-grayish-blue);
+
+  --background-image-desktop: url("../images/bg-desktop-dark.jpg");
+  --background-image-mobile: url("../images/bg-mobile-dark.jpg");
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --background-image: var(--background-image-mobile);
+  }
+  [data-theme="Dark"] {
+    --background-image: var(--background-image-mobile);
+  }
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+  background: var(--background-color) var(--background-image) no-repeat fixed
+    top/contain;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 630px) {
+  body {
+    display: block;
+  }
+}
+#app {
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+}

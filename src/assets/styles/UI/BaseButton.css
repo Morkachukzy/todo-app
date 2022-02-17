@@ -1,0 +1,11 @@
+button{
+  font-family: "Josefin Sans", sans-serif;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+  color: var(--hover-font-color);
+}

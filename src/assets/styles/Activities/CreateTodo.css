@@ -1,0 +1,24 @@
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+}
+.checkbox-wrapper {
+  flex-basis: 10%;
+  display: grid;
+  place-items: center;
+}
+input {
+  font-size: 18px;
+
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  flex-basis: 90%;
+  width: 100%;
+  padding: 1em 0em;
+  border-radius: var(--border-radius);
+  background-color: var(--second-background-color);
+  outline: none;
+  color: var(--default-font-color);
+}

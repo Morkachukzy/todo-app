@@ -1,0 +1,22 @@
+span {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.hover:hover {
+  border-color: var(--checkbox-border-color);
+}
+.background {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    27deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(148, 84, 208, 1) 100%
+  );
+  border: none;
+}

@@ -1,0 +1,15 @@
+span:hover {
+  /* display: block; */
+  cursor: pointer;
+  /* background-color: lightblue; */
+}
+img {
+  /* filter: contrast(70%); */
+  filter: brightness(1.2)
+
+}
+img:hover {
+  /* filter: contrast(100%); */
+  filter: brightness(1.7)
+}
+
